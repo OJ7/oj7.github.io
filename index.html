@@ -1,1 +1,35 @@
-Hello World
+Hello Internet People. :)
+<br>
+<br>
+If you are looking for my Github profile, <a href="github.com/OJ7/">CLICK ME</a>!
+<br>
+<br>
+There's not much to see here (yet)...
+
+<script>
+	var messages = [
+		'There\'s not much to see here (yet)...',
+		'Oh are you still here?',
+		'Thank you for being patient',
+		'Are you expecting something to happen?',
+		'Well you\'ll have to wait a while...',
+		'Or you can just check the source code',
+		'I\'ll spare you the trouble and just show you',
+		'Loading...',
+		'Loading........',
+		'Loading.............',
+		'DONE!',
+		'Sorry nothing happened :(',
+		'<img src="http://i.imgur.com/gI23Jpo.png?1" alt="It really is" style="width:500px;">',
+		'<img src="http://i.imgur.com/qYPaAhZ.gif" alt="This is the actual end" style="width:500px;">'
+	];
+
+	var i = 0;
+	timer = setInterval( function(){
+	document.body.innerHTML = document.body.innerHTML.replace(messages[i], messages[i+1]);
+		i += 1;
+		if ( i >= messages.length-1 ) {
+			clearInterval( timer );
+		}
+	}, 5000 );
+</script>
